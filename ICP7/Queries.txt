@@ -1,0 +1,11 @@
+select employee_id, name, department, hiredate from employees;
+
+select name, salary from employees where department = 'clerk';
+
+select name, department, salary from employees where hiredate = '1980-12-17' allow filtering;
+
+select name, salary from employees;
+
+select department, deptno from employees where deptno >= 20 allow filtering;
+
+select name, salary, employee_id from employees where salary = 500 allow filtering;
